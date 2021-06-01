@@ -32,6 +32,7 @@ public class UserController {
     @GetMapping(value = "/getUserById")
     @ResponseBody
     public User getUserById(int id) {
+		System.out.println();
         return userService.getUserById(id);
     }
 
